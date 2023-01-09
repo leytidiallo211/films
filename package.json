@@ -1,0 +1,27 @@
+{
+  "name": "film-pirate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "db:tables": "psql -U films -d films -f data/create_tables.sql",
+    "db:populate": "psql -U films -d films -f data/populate_tables.sql",
+    "db:reset": "npm run db:tables && npm run db:populate",
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "ejs": "^3.1.8",
+    "eslint": "^8.30.0",
+    "express": "^4.18.2",
+    "nodemon": "^2.0.20",
+    "pg": "^8.8.0",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.27.0"
+  }
+}
