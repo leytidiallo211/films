@@ -1,7 +1,9 @@
+
 const filmController = {
-    renderFilmPage(req, res) {
-      res.render("films");
-    }
-  };
+
+  renderFilmsPage(req, res) {
+    res.render("films");
   
-  module.exports = filmController;
+}
+};
+    module.exports =filmController;

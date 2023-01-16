@@ -20,6 +20,9 @@ app.use(express.static("public")); // Ca revient à déclarer une route par fich
 // On plug le router
 app.use(router);
 
+
+
+
 // Lancer l'application
 const port = process.env.PORT || 3000;
 app.listen(port, () => {
