@@ -6,19 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/style.css">
-    <title>premier projet</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js" defer></script>
+    <script src="./js/index.js" defer></script>
+    <title>O'Maya</title>
 </head>
 <body>
  <nav aria-label="header navigation">
-    <form id="monformulaire">
+    <!-- <form id="monformulaire">
         <input type="text" name="q" placeholder="Rechercher...">
-      </form>
+      </form> -->
     <!-- Contenu de la barre de navigation -->
-    <a href="/">Accueil</a>
-    <a href="../films">listes des films</a>
-    <a href="../series">listes des series</a>
-    <a href="../animes">listes des animes</a>
-    <a href="../inscrire">s'inscrire</a>
-    <a href="../login">se connecter</a>
-    <a href="../contact">contact</a>
-    </nav>
+    <ul class="primary-navigation">  
+      <li><a href="/" class="header-logo">O'Maya</a></li>
+      <li><a href="/">Accueil</a></li>
+      <li><a href="../films">Films</a></li>
+      <li><a href="../series">Séries</a></li>
+      <li><a href="../animes">Animés</a></li>
+    </ul>
+
+    <ul class="secondary-navigation">
+      <li><a href="../inscrire">Création de compte</a></li>
+      <li><a href="../login">Connexion</a></li>
+      <li><a href="../contact">Contact</a></li>
+    </div>
+  </nav>
+
+  <div class="background-navigation">
+    <img class="background-image" src="./img/film-marvel.jpg">
+  </div>
+
+  <div class="header-container"></div>

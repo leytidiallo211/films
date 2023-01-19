@@ -1,45 +1,19 @@
 <%- include('partials/header.ejs') %>
        
-    <div class="container">
-        <div class="left-section">
-            <div class="left-section">
-              <img src="./img/alice.jpg" alt="Image 1">
-              <img src="./img/stargate.jpg" alt="Image 2">
-              <img src="./img/matrix.jpg" alt="Image 3">
-              <img src="./img/walking.jpg" alt="Image 4">
-              </div>
-          <!-- Contenu de la section de gauche -->
-        </div>
-        <div class="center-section">
-         <a href="./animes.html"><h2>Liste des Animes</h2></a>
-
-        <ul>
-        <li>NARUTO</li>
-        <img src="/img/naruto.jpg" alt=""><br>
-
-        <li>BLEACH</li>
-        <img src="/img/bleach.jpg" alt=""><br>
-
-        <li>CHEVALIER DU ZODIAQUE</li>
-        <img src="/img/chevalier.jpg" alt="">
-
-        <li>DRAGON BALL Z</li>
-        <img src="/img/dragon.jpg" alt="">
-        
-        <li>CAPTAIN TSUBASA</li>
-        <img src="/img/captain.jpg" alt=""><br>
-
-        <li>KEN LE SURVIVANT</li>
-        <img src="/img/ken.jpg" alt=""><br>
-        </ul>
-
-        </div>
-    
-        <div class="right-section">
-          <!-- Contenu de la section de droite -->
-            <p>lorem*5</p>
-        </div>   
-      </div>
+<section class="list-animes list">
+  <div class="list-title">Animés</div>
+  <div #swiperRef="" class="swiper-container mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="/img/naruto.jpg" alt="Naruto"></div>
+      <div class="swiper-slide"><img src="/img/bleach.jpg" alt="Bleach"></div>
+      <div class="swiper-slide"><img src="/img/chevalier.jpg" alt="Chevalier du Zodiac"></div>
+      <div class="swiper-slide"><img src="/img/dragon.jpg" alt="Dragon Ball Z"></div>
+      <div class="swiper-slide"><img src="/img/captain.jpg" alt="Captain Tsubasa"></div>
+      <div class="swiper-slide"><img src="/img/ken.jpg" alt="Ken le Survivant"></div>
+    </div>
+  
+    <div class="swiper-pagination"></div>
+  </div>
        <%- include('partials/footer.ejs') %>
   </body>
 </html>

@@ -1,82 +1,57 @@
 <%- include('partials/header.ejs') %>
             
     <div class="container">
-        <div class="left-section">
-            <div class="left-section">
-              <img src="./img/alice.jpg" alt="Image 1">
-              <img src="./img/bleach.jpg" alt="Image 2">
-              <img src="./img/matrix.jpg" alt="Image 3">
-              <img src="./img/walking.jpg" alt="Image 4">
-              </div>
-          <!-- Contenu de la section de gauche -->
+
+      <section class="list-films list">
+        <div class="list-title">Films</div>
+        <div #swiperRef="" class="swiper-container mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="/img/dune.jpg" alt="Dune"></div>
+            <div class="swiper-slide"><img src="/img/matrix.jpg" alt="Matrix"></div>
+            <div class="swiper-slide"><img src="/img/seigneur.jpg" alt="Seigneur des anneaux"></div>
+            <div class="swiper-slide"><img src="/img/startrek.jpg" alt="Startrek"></div>
+            <div class="swiper-slide"><img src="/img/league.jpg" alt="League"></div>
+          </div>
+        
+          <div class="swiper-pagination"></div>
         </div>
-        <div class="center-section">
-            <a href="./films.html"><h2>Liste des Films</h2></a>
-        <ul>
-        <li>DUNE</li>
-        <img src="/img/dune.jpg" alt=""><br>
-
-        <li>STAR TREK</li>
-        <img src="/img/startrek.jpg" alt="">
-        
-        <li>Matrix I</li>
-        <img src="/img/matrix.jpg" alt=""><br>
-        
-        <li>SEIGNEUR DES ANNEAUX</li>
-        <img src="/img/seigneur.jpg" alt=""><br>
-
-        <li>JUSTICE LEAGUE</li>
-        <img src="/img/league.jpg" alt="">
-        </ul>
-       
-       
-        <a href="./series.html"><h2>Liste des series</h2></a>
-
-        <ul>
-        <li>Game Of Thrones</li>
-        <img src="/img/gameofthrones.jpg" alt=""><br>
-        
-        <li>STARGATE</li>
-        <img src="/img/stargate.jpg" alt=""><br>
-        
-        <li>ALTERED CARBON Saison 1</li>
-        <img src="/img/carbon.jpg" alt=""><br>
-        
-        <li>WALKING DEAD</li>
-        <img src="/img/walking.jpg" alt=""><br>
-
-        <li>ALICE IN BORDERLAND"</li>
-        <img src="/img/alice.jpg" alt=""><br>
-        </ul>
-
-        <a href="./animes.html"><h2>Liste des Animes</h2></a>
-
-        <ul>
-        <li>NARUTO</li>
-        <img src="/img/naruto.jpg" alt=""><br>
-
-        <li>BLEACH</li>
-        <img src="/img/bleach.jpg" alt=""><br>
-
-        <li>CHEVALIER DU ZODIAQUE</li>
-        <img src="/img/chevalier.jpg" alt="">
-
-        <li>DRAGON BALL Z</li>
-        <img src="/img/dragon.jpg" alt="">
-        
-        <li>CAPTAIN TSUBASA</li>
-        <img src="/img/captain.jpg" alt=""><br>
-
-        <li>KEN LE SURVIVANT</li>
-        <img src="/img/ken.jpg" alt=""><br>
-        </ul>
-
-        </div>
+      </section>
     
-        <div class="right-section">
-          <!-- Contenu de la section de droite -->
-            <p>lorem*5</p>
-        </div>   
+
+      <section class="list-series list">
+        <div class="list-title">Séries</div>
+        <div #swiperRef="" class="swiper-container mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="/img/gameofthrones.jpg" alt="Game Of Thrones"></div>
+            <div class="swiper-slide"><img src="/img/stargate.jpg" alt="Stargate"></div>
+            <div class="swiper-slide"><img src="/img/carbon.jpg" alt="Altered Carbon"></div>
+            <div class="swiper-slide"><img src="/img/walking.jpg" alt="Walking Dead"></div>
+            <div class="swiper-slide"><img src="/img/alice.jpg" alt="Alice in Bordeland"></div>
+          </div>
+         
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+
+
+      <section class="list-animes list">
+        <div class="list-title">Animés</div>
+        <div #swiperRef="" class="swiper-container mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="/img/naruto.jpg" alt="Naruto"></div>
+            <div class="swiper-slide"><img src="/img/bleach.jpg" alt="Bleach"></div>
+            <div class="swiper-slide"><img src="/img/chevalier.jpg" alt="Chevalier du Zodiac"></div>
+            <div class="swiper-slide"><img src="/img/dragon.jpg" alt="Dragon Ball Z"></div>
+            <div class="swiper-slide"><img src="/img/captain.jpg" alt="Captain Tsubasa"></div>
+            <div class="swiper-slide"><img src="/img/ken.jpg" alt="Ken le Survivant"></div>
+          </div>
+        
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+    
+  
+      
       </div>
       <%- include('partials/footer.ejs') %>
     </body>

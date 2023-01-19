@@ -1,42 +1,21 @@
 <%- include('partials/header.ejs') %>
 
            
-    <div class="container">
-        <div class="left-section">
-            <div class="left-section">
-              <img src="./img/alice.jpg" alt="Image 1">
-              <img src="./img/bleach.jpg" alt="Image 2">
-              <img src="./img/matrix.jpg" alt="Image 3">
-              <img src="./img/walking.jpg" alt="Image 4">
-              </div>
-          <!-- Contenu de la section de gauche -->
-        </div>
-        <div class="center-section">     
-       
-        <a href="./series.html"><h2>Liste des series</h2></a>
+<section class="list-series list">
+  <div class="list-title">Séries</div>
+  <div #swiperRef="" class="swiper-container mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="/img/gameofthrones.jpg" alt="Game Of Thrones"></div>
+      <div class="swiper-slide"><img src="/img/stargate.jpg" alt="Stargate"></div>
+      <div class="swiper-slide"><img src="/img/carbon.jpg" alt="Altered Carbon"></div>
+      <div class="swiper-slide"><img src="/img/walking.jpg" alt="Walking Dead"></div>
+      <div class="swiper-slide"><img src="/img/alice.jpg" alt="Alice in Bordeland"></div>
+    </div>
+   
+    <div class="swiper-pagination"></div>
+  </div>
+</section>
 
-        <ul>
-        <li>Game Of Thrones</li>
-        <img src="/img/gameofthrones.jpg" alt=""><br>
-        
-        <li>STARGATE</li>
-        <img src="/img/stargate.jpg" alt=""><br>
-        
-        <li>ALTERED CARBON Saison 1</li>
-        <img src="/img/carbon.jpg" alt=""><br>
-        
-        <li>WALKING DEAD</li>
-        <img src="/img/walking.jpg" alt=""><br>
-
-        <li>ALICE IN BORDERLAND"</li>
-        <img src="/img/alice.jpg" alt=""><br>
-        </ul>
-        </div>
-    
-        <div class="right-section">
-          <!-- Contenu de la section de droite -->
-            <p>lorem*5</p>
-        </div>   
       </div>
       <%- include('partials/footer.ejs') %>
     </body>
