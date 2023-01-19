@@ -6,53 +6,55 @@
     display: inline;
     float: right;
     
-  }
-  input[name="q"] {
+}
+
+input[name="q"] {
     width: 500px;
     border: 1px solid #ccc;
     border-radius: 4px;
     font-size: 14px;
-    padding: 8px 10px;
-} 
-  #monFormulaire input[type="text"] {
+    padding: 8px 10px;} 
+
+#monFormulaire input[type="text"] {
     border: 1px solid #ccc;
     border-radius: 4px;
     font-size: 14px;
     padding: 8px 10px;
   
-  }
+}
     .left-section,
     .center-section,
       .right-section {
         border: 1px solid black;
-      }
+}
 
 .left-section {
        display: grid;
         grid-template-columns: repeat(1fr);
         grid-gap: 16px;
-  }
+        align-content: space-between;
+}
   
   .center-section {
     text-align: center;
     grid-area: center;
-  }
+}
   
   .right-section {
     grid-area: right;
     justify-content: center;
-  }
+}
   
   .container {
     display: grid;
     grid-template-areas:
       "left center right";
-  }
+}
 
   ul {
     list-style: none;
     text-align:left;
-  }
+}
 
   nav {
     width: 100%;
@@ -66,24 +68,21 @@
     
     position: sticky;
     top: 0px;
-    }
-    a {
+}
+
+a {
       color: blue;
-    }
+}
     a:hover {
       color: rgb(103, 102, 102);
-    }
+}
 
-    img {
-
-        border: 1px solid back;
-     }
-
-     h2 {
+h2 {
         text-align: left;
         margin-bottom: 20px;
-     }
-     img {
-      width: 100px;
-      height: 100px;
-     }
+}
+
+img {
+      width: 126px;
+      height: 150px;
+}

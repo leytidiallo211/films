@@ -3,11 +3,34 @@
     <div class="container">
         <div class="left-section">
             <div class="left-section">
-                <img src="image1.jpg" alt="Image 1">
-                <img src="image2.jpg" alt="Image 2">
-                <img src="image3.jpg" alt="Image 3">
-                <img src="image4.jpg" alt="Image 4">
+                <img src="./img/alice.jpg" alt="Image 1">
+                <img src="./img/bleach.jpg" alt="Image 2">
+                <img src="./img/matrix.jpg" alt="Image 3">
+                <img src="./img/walking.jpg" alt="Image 4">
               </div>
           <!-- Contenu de la section de gauche -->
         </div>
+
+        <h1 id="title1">Se connecter</h1>
+
+        <form action="#" aria-label="Informations de connection">
+          <label for="email">Email</label>
+          <input
+            required
+            name="email"
+            type="email"
+            id="email"
+            placeholder="ex: m.dupont@gmail.com"
+          />
+          <label for="password">Mot de passe</label>
+          <input
+            required
+            name="password"
+            type="password"
+            id="password"
+            placeholder="*************"
+          />
+  
+          <input type="submit" value="Se connecter" />
+        </form>
 <%- include('partials/footer.ejs') %>
